@@ -1,10 +1,10 @@
 import React from "react";
 import Article from "./Article";
 
-const ArticleList = ({ components }) => {
-  // console.log(components);
+const ArticleList = ({ posts }) => {
+  console.log(posts);
 
-  const compMapper = components.map((comp) => (
+  const compMapper = posts.map((comp) => (
       <Article
         key={comp.id}
         title={comp.title}
